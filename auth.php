@@ -20,8 +20,8 @@ $url = $connection->url(
     ['oauth_token' => $request_token['oauth_token']]
 );
 
-//ユーザが希望する動作（dump：フォロー＆フォロワーダンプ, follow：一括フォロー）
-$_SESSION['method']=$_REQUEST['method']; 
+//移行前アカウント名をセット
+$_SESSION['oldAccount']=$_REQUEST['oldAccount']; 
 
 //Twitter.com の認証画面へリダイレクト
 header( 'location: '. $url );

@@ -16,10 +16,19 @@
       <h2>使い方</h2>
       <ol>
         <li>
-          <h3>フォローとフォロワーを取得</h3>
+          <h3>移行後アカウントでTwitterにログイン</h3>
           <p>
-            <a href="./auth.php?method=dump">ここをクリック</a
-            >して、移行前アカウントのフォローとフォロワーを取得！
+            手順2に進む前に、先に移行後アカウントでTwitterにログインして下さい
+          </p>
+        </li>
+        <li>
+          <h3>移行後アカウントでフォロー</h3>
+          <form action="./auth.php" method="get">
+            <input type="text" name="oldAccount" value="移行前アカウント名" />
+            <input type="submit" value="送信" />
+          </form>
+          <p>
+            移行後アカウントで移行前アカウントのフォローとフォロワーをフォロー
           </p>
         </li>
       </ol>
