@@ -4,3 +4,4 @@ vendor
 env
 .cache
 secret.php
+.vs
